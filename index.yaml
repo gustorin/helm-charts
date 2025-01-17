@@ -1,3 +1,225 @@
 apiVersion: v1
-entries: {}
-generated: "2025-01-10T19:47:45.472837+09:00"
+entries:
+  argo-cd:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Added conditional around argocd-tls-certs-cm.yaml helm creation
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v2.13.3
+    created: "2025-01-17T14:16:28.364787+09:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.29.4
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 3e20a2e30135651195e1b5bb08d0535f69258f38ebe4c97fb683703e23b9218d
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.25.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - argo-cd-7.7.16.tgz
+    version: 7.7.16
+  argo-events:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump argo-events to v1.9.5
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v1.9.5
+    created: "2025-01-17T14:16:28.366414+09:00"
+    description: A Helm chart for Argo Events, the event-driven workflow automation
+      framework
+    digest: 04043712c5ec501b857e4a35f700e31353e9d65a98ee25ae17f9807745a2e5a3
+    home: https://github.com/argoproj/argo-helm
+    icon: https://avatars.githubusercontent.com/u/30269780?s=200&v=4
+    keywords:
+    - argoproj
+    - argo-events
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-events
+    sources:
+    - https://github.com/argoproj/argo-events
+    urls:
+    - argo-events-2.4.13.tgz
+    version: 2.4.13
+  argo-rollouts:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Add lifecycle settings for controller
+        - kind: added
+          description: Add terminationGracePeriodSeconds for controller
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v1.7.2
+    created: "2025-01-17T14:16:28.371683+09:00"
+    description: A Helm chart for Argo Rollouts
+    digest: a0274270b8bc7476b2b4f973b4bf7dd68031abc21384c2fcdd02a159ccf64b06
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-rollouts
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-rollouts
+    sources:
+    - https://github.com/argoproj/argo-rollouts
+    urls:
+    - argo-rollouts-2.38.2.tgz
+    version: 2.38.2
+  argo-workflows:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Support configuring workflow events in the controller
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v3.6.2
+    created: "2025-01-17T14:16:28.37518+09:00"
+    description: A Helm chart for Argo Workflows
+    digest: 43799bb4c9bef425b9f9783c9d643949709c6dad3e94921d0a532879fd08a167
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-workflows.readthedocs.io/en/stable/assets/logo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - argo-workflows-0.45.4.tgz
+    version: 0.45.4
+  cloudnative-pg:
+  - apiVersion: v2
+    appVersion: 1.25.0
+    created: "2025-01-17T14:16:28.386548+09:00"
+    dependencies:
+    - alias: monitoring
+      condition: monitoring.grafanaDashboard.create
+      name: cluster
+      repository: https://cloudnative-pg.github.io/grafana-dashboards
+      version: "0.0"
+    description: CloudNativePG Operator Helm Chart
+    digest: f7393c2b8128af046a8c7b0f3fe59b785734815979833aafc628653f5c7ef54a
+    home: https://cloudnative-pg.io
+    icon: https://raw.githubusercontent.com/cloudnative-pg/artwork/main/cloudnativepg-logo.svg
+    keywords:
+    - operator
+    - controller
+    - postgresql
+    - postgres
+    - database
+    maintainers:
+    - email: p.scorsolini@gmail.com
+      name: phisco
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    type: application
+    urls:
+    - cloudnative-pg-0.23.0.tgz
+    version: 0.23.0
+  cluster:
+  - apiVersion: v2
+    created: "2025-01-17T14:16:28.390105+09:00"
+    description: Deploys and manages a CloudNativePG cluster and its associated resources.
+    digest: 12d087c26b2dc9672c0568d28761c5dcca5d265c9e2da41d412a6edd9e3fc0d5
+    home: https://cloudnative-pg.io
+    icon: https://raw.githubusercontent.com/cloudnative-pg/artwork/main/cloudnativepg-logo.svg
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    maintainers:
+    - email: itay+cloudnativepg-charts+github.com@grudev.com
+      name: itay-grudev
+    name: cluster
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    type: application
+    urls:
+    - cluster-0.2.0.tgz
+    version: 0.2.0
+  gitea:
+  - apiVersion: v2
+    appVersion: 1.22.3
+    created: "2025-01-17T14:16:28.422359+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.5.20
+    - condition: postgresql-ha.enabled
+      name: postgresql-ha
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.2.16
+    - condition: redis-cluster.enabled
+      name: redis-cluster
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 10.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.6.4
+    description: Gitea Helm chart for Kubernetes
+    digest: 75cbfa8b04807898d337b49417e9bbe46bf34f5f054cfd49bc3d9115778e5b20
+    icon: https://gitea.com/assets/img/logo.svg
+    keywords:
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: charlie@charliedrage.com
+      name: Charlie Drage
+    - email: maintainers@gitea.io
+      name: Gitea Authors
+    - email: konrad.lother@novum-rgi.de
+      name: Konrad Lother
+    - email: lucas.hahn@novum-rgi.de
+      name: Lucas Hahn
+    - email: sk.bunsenbrenner@gmail.com
+      name: Steven Kriegler
+    - email: patrick.schratz@gmail.com
+      name: Patrick Schratz
+    name: gitea
+    sources:
+    - https://gitea.com/gitea/helm-chart
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    type: application
+    urls:
+    - gitea-10.6.0.tgz
+    version: 10.6.0
+generated: "2025-01-17T14:16:28.34738+09:00"
