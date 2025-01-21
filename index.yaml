@@ -10,7 +10,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.13.3
-    created: "2025-01-17T14:16:28.364787+09:00"
+    created: "2025-01-21T11:40:59.496192+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -18,7 +18,7 @@ entries:
       version: 4.29.4
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 3e20a2e30135651195e1b5bb08d0535f69258f38ebe4c97fb683703e23b9218d
+    digest: 14cc0bc914562641865398232078f2767f6476897d723e43b704f27261da1a04
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
     keywords:
@@ -34,7 +34,7 @@ entries:
     - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
     - https://github.com/argoproj/argo-cd
     urls:
-    - argo-cd-7.7.16.tgz
+    - https://gustorin.github.io/helm-charts/argo-cd-7.7.16.tgz
     version: 7.7.16
   argo-events:
   - annotations:
@@ -46,10 +46,10 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v1.9.5
-    created: "2025-01-17T14:16:28.366414+09:00"
+    created: "2025-01-21T11:40:59.497373+09:00"
     description: A Helm chart for Argo Events, the event-driven workflow automation
       framework
-    digest: 04043712c5ec501b857e4a35f700e31353e9d65a98ee25ae17f9807745a2e5a3
+    digest: 0c9f7a8523eb0f07b5edf4998dc61aeef3791decd2cadc24fac20eea029c4998
     home: https://github.com/argoproj/argo-helm
     icon: https://avatars.githubusercontent.com/u/30269780?s=200&v=4
     keywords:
@@ -62,7 +62,7 @@ entries:
     sources:
     - https://github.com/argoproj/argo-events
     urls:
-    - argo-events-2.4.13.tgz
+    - https://gustorin.github.io/helm-charts/argo-events-2.4.13.tgz
     version: 2.4.13
   argo-rollouts:
   - annotations:
@@ -76,9 +76,9 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v1.7.2
-    created: "2025-01-17T14:16:28.371683+09:00"
+    created: "2025-01-21T11:40:59.499359+09:00"
     description: A Helm chart for Argo Rollouts
-    digest: a0274270b8bc7476b2b4f973b4bf7dd68031abc21384c2fcdd02a159ccf64b06
+    digest: e9a1839a034015f51fa89cef016e72c70f7e94856b2d24452e322c39836b1f46
     home: https://github.com/argoproj/argo-helm
     icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
     keywords:
@@ -91,7 +91,7 @@ entries:
     sources:
     - https://github.com/argoproj/argo-rollouts
     urls:
-    - argo-rollouts-2.38.2.tgz
+    - https://gustorin.github.io/helm-charts/argo-rollouts-2.38.2.tgz
     version: 2.38.2
   argo-workflows:
   - annotations:
@@ -103,9 +103,9 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v3.6.2
-    created: "2025-01-17T14:16:28.37518+09:00"
+    created: "2025-01-21T11:40:59.500568+09:00"
     description: A Helm chart for Argo Workflows
-    digest: 43799bb4c9bef425b9f9783c9d643949709c6dad3e94921d0a532879fd08a167
+    digest: fb4ebacdc48f39d76c09f1b8bcd9baa2c7a7be4b7f47dddb1319a31729b7858f
     home: https://github.com/argoproj/argo-helm
     icon: https://argo-workflows.readthedocs.io/en/stable/assets/logo.png
     maintainers:
@@ -116,12 +116,12 @@ entries:
     - https://github.com/argoproj/argo-workflows
     type: application
     urls:
-    - argo-workflows-0.45.4.tgz
+    - https://gustorin.github.io/helm-charts/argo-workflows-0.45.4.tgz
     version: 0.45.4
   cloudnative-pg:
   - apiVersion: v2
     appVersion: 1.25.0
-    created: "2025-01-17T14:16:28.386548+09:00"
+    created: "2025-01-21T11:40:59.504407+09:00"
     dependencies:
     - alias: monitoring
       condition: monitoring.grafanaDashboard.create
@@ -129,7 +129,7 @@ entries:
       repository: https://cloudnative-pg.github.io/grafana-dashboards
       version: "0.0"
     description: CloudNativePG Operator Helm Chart
-    digest: f7393c2b8128af046a8c7b0f3fe59b785734815979833aafc628653f5c7ef54a
+    digest: 2a588f7a451c858fd85c72db6dd15db717ba6698bdb582fbcbf9bd5855ffaf2f
     home: https://cloudnative-pg.io
     icon: https://raw.githubusercontent.com/cloudnative-pg/artwork/main/cloudnativepg-logo.svg
     keywords:
@@ -146,13 +146,13 @@ entries:
     - https://github.com/cloudnative-pg/charts
     type: application
     urls:
-    - cloudnative-pg-0.23.0.tgz
+    - https://gustorin.github.io/helm-charts/cloudnative-pg-0.23.0.tgz
     version: 0.23.0
-  cluster:
+  cnpg-cluster:
   - apiVersion: v2
-    created: "2025-01-17T14:16:28.390105+09:00"
+    created: "2025-01-21T11:40:59.505802+09:00"
     description: Deploys and manages a CloudNativePG cluster and its associated resources.
-    digest: 12d087c26b2dc9672c0568d28761c5dcca5d265c9e2da41d412a6edd9e3fc0d5
+    digest: bcf33c3bd366c6a6d6acf3e5c968dc54111f6c00ea14f1e2277bc50f5b0de6dd
     home: https://cloudnative-pg.io
     icon: https://raw.githubusercontent.com/cloudnative-pg/artwork/main/cloudnativepg-logo.svg
     keywords:
@@ -162,17 +162,17 @@ entries:
     maintainers:
     - email: itay+cloudnativepg-charts+github.com@grudev.com
       name: itay-grudev
-    name: cluster
+    name: cnpg-cluster
     sources:
     - https://github.com/cloudnative-pg/charts
     type: application
     urls:
-    - cluster-0.2.0.tgz
+    - https://gustorin.github.io/helm-charts/cnpg-cluster-0.2.0.tgz
     version: 0.2.0
   gitea:
   - apiVersion: v2
     appVersion: 1.22.3
-    created: "2025-01-17T14:16:28.422359+09:00"
+    created: "2025-01-21T11:40:59.518481+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -191,7 +191,7 @@ entries:
       repository: oci://registry-1.docker.io/bitnamicharts
       version: 19.6.4
     description: Gitea Helm chart for Kubernetes
-    digest: 75cbfa8b04807898d337b49417e9bbe46bf34f5f054cfd49bc3d9115778e5b20
+    digest: 4bc9fae7aa2dce8153849747ca060d37278cd7332231f7f9403fe7160cdc6321
     icon: https://gitea.com/assets/img/logo.svg
     keywords:
     - git
@@ -220,6 +220,184 @@ entries:
     - https://hub.docker.com/r/gitea/gitea/
     type: application
     urls:
-    - gitea-10.6.0.tgz
+    - https://gustorin.github.io/helm-charts/gitea-10.6.0.tgz
     version: 10.6.0
-generated: "2025-01-17T14:16:28.34738+09:00"
+  harbor:
+  - apiVersion: v1
+    appVersion: 2.12.2
+    created: "2025-01-21T11:40:59.520848+09:00"
+    description: An open source trusted cloud native registry that stores, signs,
+      and scans content
+    digest: 2ff016faa424b4208753b4afc44b4b5c617d16efc02ef8bf446e0d367f3d1c82
+    home: https://goharbor.io
+    icon: https://raw.githubusercontent.com/goharbor/website/main/static/img/logos/harbor-icon-color.png
+    keywords:
+    - docker
+    - registry
+    - harbor
+    maintainers:
+    - email: yan-yw.wang@broadcom.com
+      name: Yan Wang
+    - email: stone.zhang@broadcom.com
+      name: Stone Zhang
+    - email: miner.yang@broadcom.com
+      name: Miner Yang
+    name: harbor
+    sources:
+    - https://github.com/goharbor/harbor
+    - https://github.com/goharbor/harbor-helm
+    urls:
+    - https://gustorin.github.io/helm-charts/harbor-1.16.2.tgz
+    version: 1.16.2
+  keycloakx:
+  - apiVersion: v2
+    appVersion: 25.0.6
+    created: "2025-01-21T11:40:59.521776+09:00"
+    description: Keycloak.X - Open Source Identity and Access Management for Modern
+      Applications and Services
+    digest: 193af39554c66fa52648d00f5891ae1336fa9dc8886cdd99f75bb0b0ba5a539c
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_logo_200px.svg
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - oauth
+    - ldap
+    - keycloakx
+    - quarkus
+    maintainers:
+    - email: thomas.darimont+github@gmail.com
+      name: thomasdarimont
+    name: keycloakx
+    sources:
+    - https://github.com/codecentric/helm-charts
+    - https://github.com/keycloak/keycloak/tree/main/quarkus/container
+    urls:
+    - https://gustorin.github.io/helm-charts/keycloakx-2.2.2.tgz
+    version: 2.2.2
+  longhorn:
+  - apiVersion: v1
+    appVersion: v1.7.2
+    created: "2025-01-21T11:40:59.523233+09:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: 46a698a32bfa7652fe3959f8045ccc266e7d06e45c8a1eea15b841d9d03de333
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - https://gustorin.github.io/helm-charts/longhorn-1.7.2.tgz
+    version: 1.7.2
+  minio:
+  - apiVersion: v1
+    appVersion: RELEASE.2024-12-18T13-15-44Z
+    created: "2025-01-21T11:40:59.524028+09:00"
+    description: High Performance Object Storage
+    digest: 42cb0f7eae63d031e16dd4725f91fe4fc805c97764ea8aa55d917508b5fde668
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: minio
+    sources:
+    - https://github.com/minio/minio
+    urls:
+    - https://gustorin.github.io/helm-charts/minio-5.4.0.tgz
+    version: 5.4.0
+  victoria-metrics-k8s-stack:
+  - annotations:
+      artifacthub.io/category: monitoring-logging
+      artifacthub.io/changes: |
+        - bump version of VM components to [v1.109.1](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.109.1)
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Sources
+          url: https://github.com/VictoriaMetrics/helm-charts/tree/master/charts/victoria-metrics-k8s-stack
+        - name: Charts repo
+          url: https://victoriametrics.github.io/helm-charts/
+        - name: Docs
+          url: https://docs.victoriametrics.com
+        - name: Changelog
+          url: https://docs.victoriametrics.com/changelog
+      artifacthub.io/operator: "true"
+    apiVersion: v2
+    appVersion: v1.109.1
+    created: "2025-01-21T11:40:59.545868+09:00"
+    dependencies:
+    - name: victoria-metrics-common
+      repository: https://victoriametrics.github.io/helm-charts
+      version: 0.0.*
+    - condition: victoria-metrics-operator.enabled
+      name: victoria-metrics-operator
+      repository: https://victoriametrics.github.io/helm-charts
+      version: 0.40.*
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.27.*
+    - condition: prometheus-node-exporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.42.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 8.6.*
+    - condition: prometheus-operator-crds.enabled
+      name: prometheus-operator-crds
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 16.0.*
+    description: Kubernetes monitoring on VictoriaMetrics stack. Includes VictoriaMetrics
+      Operator, Grafana dashboards, ServiceScrapes and VMRules
+    digest: d5e0bf6cea1322da0f9978d41b7e5f332e9c0b2d1857c8b42deb9168fcbe6f59
+    home: https://github.com/VictoriaMetrics/helm-charts
+    icon: https://avatars.githubusercontent.com/u/43720803?s=200&v=4
+    keywords:
+    - victoriametrics
+    - operator
+    - monitoring
+    - kubernetes
+    - observability
+    - tsdb
+    - metrics
+    - metricsql
+    - timeseries
+    kubeVersion: '>=1.25.0-0'
+    name: victoria-metrics-k8s-stack
+    sources:
+    - https://github.com/VictoriaMetrics/helm-charts
+    type: application
+    urls:
+    - https://gustorin.github.io/helm-charts/victoria-metrics-k8s-stack-0.33.5.tgz
+    version: 0.33.5
+generated: "2025-01-21T11:40:59.488045+09:00"
