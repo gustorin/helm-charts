@@ -20,6 +20,11 @@
 | cnpg-cluster     | PostgreSQL 클러스터를 Kubernetes에서 관리하기 위한 Cloud Native PostgreSQL 솔루션입니다. | 0.2.0  |
 | cloudnative-pg   | PostgreSQL의 클라우드 네이티브 배포 및 관리 솔루션으로, 고가용성과 스케일링을 지원합니다. | 0.23.0  |
 | gitea            | Git 서비스와 협업 기능을 제공하는 경량화된 코드 호스팅 플랫폼입니다.        | 10.6.0 |
+| harbor                       | 컨테이너 이미지 및 Helm 차트를 저장하고 관리하기 위한 레지스트리입니다.     | 1.16.2 |
+| keycloakx                    | OAuth2 및 OpenID Connect 기반의 인증 및 권한 부여를 제공하는 Identity 및 Access Management 솔루션입니다. | 2.2.2  |
+| longhorn                     | Kubernetes에서 블록 스토리지를 제공하는 오픈 소스 분산 스토리지 시스템입니다. | 1.7.2  |
+| minio                        | 고성능 객체 스토리지 솔루션으로, S3 API 호환성을 제공합니다.                 | 5.4.0  |
+| victoria-metrics-k8s-stack   | 고성능의 시계열 데이터베이스 및 모니터링 솔루션으로, Kubernetes에 최적화되어 있습니다. | 0.33.5  |
 
 ## 설치 방법
 
